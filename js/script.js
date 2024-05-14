@@ -44,7 +44,8 @@ scrollBtn.onclick = function(){
 }
 
 // Countdown
-let countDownDate = new Date("Dec 31, 2023 23:59:59").getTime()
+let currentYear = new Date().getYear()
+let countDownDate = new Date(`Dec 31, ${currentYear} 23:59:59`).getTime()
 
 let counter = setInterval(() => {
   let currentDate = new Date().getTime()
